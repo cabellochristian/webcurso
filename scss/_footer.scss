@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;    
+}
+.info {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    img {
+        width: 50px;
+    }
+    h3 {
+        font-size: 15px;
+        word-wrap: break-word;
+        max-width: 400px;   
+    }
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    i {
+        font-size: 40px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bacasime Antique", serif;
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.navegador {
+  width: 100%;
+  background-color: cyan;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navegador img {
+  width: 40px;
+}
+.navegador a {
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav_menu {
+  display: block;
+  margin: 0 20px;
+}
+
+.Logo {
+  display: block;
+  margin: 0 10px;
+}
+
+.carousel-inner {
+  height: 700px;
+}
+.carousel-inner img {
+  object-fit: cover;
+  height: 700px;
+}
+
+.carousel-caption h5, p {
+  color: #000;
+}
+
+.carousel-indicators button {
+  background-color: #000 !important;
+}
+
+.index-contenido-principal {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.index-contenido-principal h1 {
+  text-align: start;
+  font-size: 20px;
+  letter-spacing: 20px;
+}
+.index-contenido-principal h2 {
+  text-align: center;
+}
+
+.imagen-contenido-principal {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-contenido-principal img {
+  width: 550px;
+  height: 350px;
+}
+
+.index-contenido-principal1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 20px;
+}
+
+.index-contenido-secundario {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.index-contenido-secundario h1 {
+  text-align: start;
+  font-size: 20px;
+  letter-spacing: 20px;
+}
+.index-contenido-secundario h2 {
+  text-align: center;
+}
+
+.index-contenido-secundario1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 20px;
+}
+
+.imagen-secundario {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-secundario img {
+  width: 550px;
+  height: 350px;
+}
+
+.nosotros-contenido-principal {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nosotros-contenido-principal p {
+  text-align: start;
+  font-size: 20px;
+  letter-spacing: 20px;
+}
+.nosotros-contenido-principal h2 {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.nosotros-contenido-secundario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nosotros-contenido-secundario img {
+  max-width: 100%;
+  height: auto;
+}
+.nosotros-contenido-secundario p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.nosotros-contenido-secundario div {
+  padding: 10px;
+  border-right: 2px solid #333;
+}
+
+nosotros-contenido-secundario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 20px;
+}
+
+h3 {
+  text-align: start;
+  font-size: 20px;
+  text-justify: auto;
+}
+h3 img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 350px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aqua;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.info img {
+  width: 50px;
+}
+.info h3 {
+  font-size: 15px;
+  word-wrap: break-word;
+  max-width: 400px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.redes i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 1213px) {
+  .index-contenido-principal, .index-contenido-secundario {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+}
+@media (max-width: 1024x) {
+  .open-cel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: cyan;
+    position: fixed;
+    z-index: 100000;
+  }
+  .open-cel i {
+    font-size: 35px;
+  }
+  .open-cel:hover + .navegacion-celular {
+    height: 300px;
+    opacity: 1;
+  }
+  .navegacion-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 0;
+    opacity: 0;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+    background: cyan;
+    position: fixed;
+    z-index: 10000;
+    transition: all 1s;
+  }
+  .logo_nav img {
+    padding: 20px 0;
+  }
+  .nav_celu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav_celu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .navegador {
+    display: none;
+  }
+  .index-contenido-secundario1 {
+    width: 100%;
+  }
+  .imagen-secundario {
+    width: 100%;
+  }
+  .imagen-secundario img {
+    width: 100%;
+  }
+  .index-contenido-principal, .index-contenido-secundario {
+    margin: 30px 0;
+  }
+  .index-contenido-principal1 {
+    width: 100%;
+  }
+  .imagen-contenido-principal {
+    width: 100%;
+  }
+  .imagen-contenido-principal img {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .index-contenido-principal h1 {
+    text-align: center;
+  }
+  .info h3 {
+    font-size: 15px;
+  }
+  .info {
+    align-items: center;
+  }
+  .carousel-inner {
+    height: 440px;
+  }
+  .carousel-inner img {
+    height: 440px;
+  }
+  .index-contenido-principal1, .index-contenido-secundario {
+    margin: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
