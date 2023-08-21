@@ -4,37 +4,38 @@
 .navegador {
     width: 100%;
     background-color: cyan;
-    height: 70px;
+    height: 60px;
     top: 0;
     position: fixed;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img {
-        width: 40px;
-    }
     a {
         text-decoration: none;
         padding: 10px;
         color: #000;
         font-size: 15px;
         font-weight: bold;  
-    }    
+    }
+}
+.Logo {
+    display: block;
+    margin: 0 10px;
+    img {
+        width: 40px;
+    }
 }
 .nav_menu {
     display: block;
     margin: 0 20px;
 }
-.Logo {
-    display: block;
-    margin: 0 10px;
-}
 .carousel-inner {
-    height: 890px;
-        img {
-            object-fit: cover;
-        }
+    height: 700px;
+    img {
+        object-fit: cover;
+        height: 700px;
+    }
 }
 .carousel-caption h5, p {
     color: #000;
